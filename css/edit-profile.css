@@ -1,0 +1,19 @@
+.avatar {
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.form-control {
+    opacity: .8;
+}
+
+.form-control:focus {
+    opacity: .5;
+    box-shadow: none;
+}
+
+.control-label {
+    color: var(--title-color);
+    margin-bottom: 5px;
+    font-weight: 500;
+}

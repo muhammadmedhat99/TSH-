@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a website for siling machiens">
+    <link rel="stylesheet" href="css/comming-soon.css">
+    <!-- bootstrap link  -->
+    <link rel="stylesheet" href="css/bootstrap.rtl.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>TSH_Coming Soon</title>
+</head>
+
+<body>
+    <div class="coming-soon-logo mb-5 text-center p-5 w-100"><img src="imgs/Image 1.svg" alt=""></div>
+    <div class="text-container mt-5 text-center text-white">
+        <h1 class="com-txt text-center">Coming Soon</h1>
+        <p>In feugiat molestie tortor a malesuada. Etiam a venenatis ipsum. Proin pharetra elit at feugiat
+            commodo vel placerat tincidunt sapien nec</p>
+        <div class="counter-main">
+            <div class="days counter">
+                <div class=" day1 day" id="days">00</div>
+                <span>Days</span>
+                <section><span class="loader-1"> </span></section>
+            </div>
+            <div class="hours counter">
+                <div class="hour day" id="hours">00</div>
+                <span>Hours</span>
+                <section><span class="loader-2"> </span></section>
+            </div>
+            <div class="minutes counter">
+                <div class="minute day" id="minutes">00</div>
+                <span>Minutes</span>
+                <section><span class="loader-3"> </span></section>
+            </div>
+            <div class="seconds counter">
+                <div class="second day" id="seconds">00</div>
+                <span>Seconds</span>
+                <section><span class="loader-4"> </span></section>
+            </div>
+        </div>
+        <div class="rights-reserved p-2">
+            <span>All rights reserved. Development by </span><a href="#">Nano Food Machine</a>
+        </div>
+    </div>
+
+    <!-- bootstrap script include  -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- counter script  -->
+    <script>
+        // const newyears = "1 jan 2023";
+
+
+        const displaydays = document.getElementById('days');
+        const displayhour = document.getElementById('hours');
+        const displayminute = document.getElementById('minutes');
+        const displaysecond = document.getElementById('seconds');
+
+        // program to get new date
+        const newData = new Date(2022, 05, 01, 00, 00, 00, 00);
+        // newData.setDate('Fri Jun 24 2022 16:59:47 GMT+0200 (Eastern European Standard Time)');
+        console.log(newData);
+
+        //main logic 
+        function counter() {
+            const currentdate = new Date();
+            const totalseconds = (newData - currentdate) / 1000;
+            const days = Math.floor(totalseconds / 3600 / 24);
+            const hours = Math.floor(totalseconds / 3600) % 24;
+            const minutes = Math.floor(totalseconds / 60) % 60;
+            const seconds = Math.floor(totalseconds % 60);
+            displaydays.innerHTML = formatnumber(days);
+            displayhour.innerHTML = formatnumber(hours);
+            displayminute.innerHTML = formatnumber(minutes);
+            displaysecond.innerHTML = formatnumber(seconds);
+        }
+
+        function formatnumber(number) {
+            return number < 10 ? ('0' + number) : number;
+        }
+
+        setInterval(counter, 100);
+    </script>
+</body>
+
+</html>

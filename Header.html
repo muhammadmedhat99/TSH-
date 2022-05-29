@@ -1,0 +1,81 @@
+<!-- navbar style  -->
+<style>
+    .navbar-expand-md .navbar-nav {
+        align-items: center;
+        gap: 30px;
+    }
+
+    .navbar-nav .nav-item a {
+        font-size: 18px;
+    }
+
+    .navbar-nav .nav-item a.active {
+        font-weight: 500;
+        color: #8DC63F !important;
+    }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<nav class="navbar navbar-expand-md bg-white shadow-sm py-3 px-2 px-md-0">
+    <!-- START : Full width container -->
+    <div class="container">
+        <!-- START : Logo -->
+        <a class="navbar-brand" href="index.html">
+            <img src="imgs/Image 2.svg" alt="Logo" width="130px" height="50px">
+        </a>
+        <!-- END : Logo -->
+        <!-- START : Nav button -->
+        <button class="navbar-toggler shadow-none fs-2" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+            <!-- END : Nav button -->
+        </button>
+        <!-- START :  Nav link -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav w-100 d-flex justify-content-end py-3 py-md-0">
+                <li class="nav-item ">
+                    <a class="nav-link text-dark active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="#">Our Product</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="#">Our Community</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="contact-us.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+        <!-- END : Nav link -->
+    </div>
+    <!-- END : Full width Container -->
+</nav>
+
+<script>
+    // add active class to nav list icons
+    let navItem = document.querySelectorAll(".nav-link");
+
+    function activeLink() {
+        navItem.forEach((item) => {
+            item.classList.remove("active");
+            this.classList.add("active");
+        });
+    }
+    navItem.forEach((item) => item.addEventListener("click", activeLink));
+
+    jQuery(function ($) {
+        var path = window.location.href; // because the 'href' property of the DOM element is the absolute path
+        $('.navbar-nav .nav-item .nav-link').each(function () {
+            if (this.href === path) {
+                $('.navbar-nav .nav-item .nav-link').removeClass('active');
+                $(this).addClass('active');
+            }
+        });
+    });
+</script>
