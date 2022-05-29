@@ -645,10 +645,13 @@ body {
 }
 
 .row {
-    .details:not(:last-child) {
-        border-right: 1px solid #99c4558f;
+    @media(min-width:1053px) {
+        .details:not(:last-child) {
+            border-right: 1px solid #99c4558f;
 
+        }
     }
+
 }
 
 // .about us 
@@ -769,6 +772,109 @@ body {
         width: 100%;
         font-size: .8rem;
         letter-spacing: 1px;
+    }
+}
+
+
+// contact us area style 
+.contact-us {
+
+    // map and location area 
+    .map-area {
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(#010101, #8DC63F);
+            opacity: .3;
+            z-index: 1;
+            top: 0;
+            left: 0;
+        }
+
+
+    }
+
+    .location {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        min-width: 250px;
+
+        img {
+            width: 50px;
+        }
+
+        span {
+            font-size: 10px;
+            background-color: #292929;
+            padding: 0 10px;
+            color: #fff;
+            border-radius: 10px;
+        }
+    }
+
+    // contact info area 
+    .contact-info {
+        .icon {
+            background-image: linear-gradient(#E78A3C, #99C455);
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            border-radius: 6px;
+            color: #fff;
+            text-align: center;
+        }
+
+        .follow-icons {
+            a {
+                text-decoration: none;
+                margin: 0 5px;
+            }
+
+            i {
+                color: #8f8f8f;
+                background-color: #f0f0f0;
+                padding: 10px;
+                border-radius: 50%;
+
+                font-size: 14px;
+                border: 1px solid rgba(0, 0, 0, 0.521);
+            }
+        }
+    }
+
+    // send mail area 
+    .send-mail {
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px 20px;
+            border: 2px solid #E78A3C;
+            border-radius: 10px;
+            margin: 10px;
+            resize: none;
+            outline: none;
+        }
+
+        .submit {
+            button {
+                border: none;
+                background-image: linear-gradient(#E78A3C, #99C455);
+                color: #fff;
+                padding: 10px 30px;
+                border-radius: 10px;
+                font-size: 22px;
+            }
+
+
+        }
     }
 }
 

@@ -633,8 +633,10 @@ body {
           animation: arrow-animation 1s linear infinite;
 }
 
-.row .details:not(:last-child) {
-  border-right: 1px solid #99c4558f;
+@media (min-width: 1053px) {
+  .row .details:not(:last-child) {
+    border-right: 1px solid #99c4558f;
+  }
 }
 
 .about .our {
@@ -751,6 +753,91 @@ body {
   width: 100%;
   font-size: .8rem;
   letter-spacing: 1px;
+}
+
+.contact-us .map-area {
+  position: relative;
+}
+
+.contact-us .map-area::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#010101), to(#8DC63F));
+  background-image: linear-gradient(#010101, #8DC63F);
+  opacity: .3;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.contact-us .location {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 2;
+  min-width: 250px;
+}
+
+.contact-us .location img {
+  width: 50px;
+}
+
+.contact-us .location span {
+  font-size: 10px;
+  background-color: #292929;
+  padding: 0 10px;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.contact-us .contact-info .icon {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#E78A3C), to(#99C455));
+  background-image: linear-gradient(#E78A3C, #99C455);
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 6px;
+  color: #fff;
+  text-align: center;
+}
+
+.contact-us .contact-info .follow-icons a {
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.contact-us .contact-info .follow-icons i {
+  color: #8f8f8f;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 14px;
+  border: 1px solid rgba(0, 0, 0, 0.521);
+}
+
+.contact-us .send-mail input,
+.contact-us .send-mail textarea {
+  width: 100%;
+  padding: 10px 20px;
+  border: 2px solid #E78A3C;
+  border-radius: 10px;
+  margin: 10px;
+  resize: none;
+  outline: none;
+}
+
+.contact-us .send-mail .submit button {
+  border: none;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#E78A3C), to(#99C455));
+  background-image: linear-gradient(#E78A3C, #99C455);
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 10px;
+  font-size: 22px;
 }
 
 @-webkit-keyframes arrow-animation {
