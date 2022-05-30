@@ -1008,6 +1008,92 @@ body {
     }
 }
 
+// blog area style 
+.blog {
+    .container {
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 2px;
+            left: 0;
+            background-color: #777;
+        }
+
+
+        .row {
+            position: relative;
+
+            .the-data {
+                position: absolute;
+                left: -60px;
+                font-size: 12px;
+                font-weight: bold;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 2;
+            }
+
+
+
+            .profile-pic {
+                position: absolute;
+                left: 20px;
+                width: 75px;
+                height: 50px;
+                top: 50%;
+                transform: translateY(-50%);
+
+
+                img {
+                    border-radius: 50%;
+                    width: 100%;
+                    z-index: 1;
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 30px;
+                    height: 2px;
+                    background-color: #777;
+                    left: -15px;
+                    top: 50%;
+                    z-index: -100;
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background-color: #8DC63F;
+                    left: -25px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    z-index: -100;
+                }
+            }
+        }
+
+
+
+    }
+
+
+    .read-more-btn {
+        padding: 10px 30px;
+        background-color: #777;
+        color: #fff;
+        border: 2px solid #E78A3C;
+        border-radius: 10px;
+        outline: none;
+    }
+}
+
 @keyframes arrow-animation {
     0% {
         transform: translateY(10px);

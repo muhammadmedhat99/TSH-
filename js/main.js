@@ -12,7 +12,7 @@ allPhotos.forEach(e=>{
 });
 
 // Gallery image hover
-$( ".img-wrapper" ).hover(
+$(".img-wrapper" ).hover(
     function() {
       $(this).find(".img-overlay").animate({opacity: 1}, 600);
     }, function() {
