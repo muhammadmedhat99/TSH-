@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Noto Sans Arabic', sans-serif;
+}
+
+// global rules 
+.orange {
+    background-color: #F58520;
+}
+
+.green {
+    background-color: #8DC63F;
+}
+
+.orange-txt {
+    color: #F58520;
+}
+
+.green-txt {
+    color: #8DC63F;
+}
+
+.line {
+    width: 60px;
+    height: 1px;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 1px;
+        background-color: #F58520;
+        left: -15px;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 1px;
+        background-color: #F58520;
+        right: -15px;
+    }
+}
+
+.line.green {
+    &::before {
+        background-color: #8DC63F;
+    }
+
+    &::after {
+        background-color: #8DC63F;
+    }
+}
+
+
+.our-products {
+    .owl-carousel {
+        transform: rotate(90deg);
+    }
+
+    .item {
+        transform: rotate(-90deg);
+        padding: 25px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .owl-carousel .owl-nav {
+        display: none;
+
+    }
+
+    .owl-dots {
+        margin-top: 25px;
+
+        .owl-dot span {
+            background-color: #fff;
+            border: 1px solid #999;
+        }
+
+        .owl-dot.active span {
+            border: none;
+            background-color: #e78c24;
+        }
+
+        .owl-dot:hover span {
+            border: none;
+            background-color: #e78c24;
+        }
+    }
+
+    .buttons-box {
+
+        .status,
+        .time {
+            padding: 5px 20px;
+            border: none;
+            outline: none;
+        }
+
+    }
+
+    .detailbutton {
+        border: 1px solid #e3e3e3;
+        outline: none;
+        padding: 5px 15px;
+        border-radius: 15px;
+        background-color: #fff;
+        transition: .5s;
+        font-weight: 600;
+
+        &:hover {
+            background-image: linear-gradient(#E78A3C, #99C455);
+            color: #fff;
+        }
+    }
+
+    .row.bg-light {
+        .owl-carousel {
+            transform: rotate(-90deg);
+        }
+
+        .item {
+            transform: rotate(90deg);
+        }
+
+        .products-that-it-makes {
+            left: -20px;
+            top: 50%;
+            transform: translateY(-50%);
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .img-box {
+                img {
+                    width: 60px;
+                    height: 60px;
+                    padding: 5px;
+                    border-radius: 50%;
+                    border: 1px solid #999;
+                }
+            }
+        }
+    }
+
+    .products-that-it-makes {
+        right: -20px;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .img-box {
+            img {
+                width: 60px;
+                height: 60px;
+                padding: 5px;
+                border-radius: 50%;
+                border: 1px solid #999;
+            }
+        }
+    }
+
+}

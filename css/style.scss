@@ -23,6 +23,10 @@ body {
     text-align: center;
     text-transform: uppercase;
     font-size: 3rem;
+
+    @media(max-width:992px) {
+        font-size: 1.8rem;
+    }
 }
 
 .read-more {

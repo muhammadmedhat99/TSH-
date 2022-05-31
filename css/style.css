@@ -16,6 +16,12 @@ body {
   font-size: 3rem;
 }
 
+@media (max-width: 992px) {
+  .main-title {
+    font-size: 1.8rem;
+  }
+}
+
 .read-more {
   opacity: 1;
   padding: 10px 20px;
