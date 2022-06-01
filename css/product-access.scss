@@ -1,0 +1,239 @@
+// global rules 
+.main-title {
+    color: #343434;
+}
+
+.sec-title {
+    color: #777;
+}
+
+.orange {
+    background-color: #F58520;
+}
+
+.green {
+    background-color: #8DC63F;
+}
+
+.orange-txt {
+    color: #F58520;
+}
+
+.green-txt {
+    color: #8DC63F;
+}
+
+.line {
+    width: 60px;
+    height: 1px;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 1px;
+        background-color: #F58520;
+        left: -15px;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 1px;
+        background-color: #F58520;
+        right: -15px;
+    }
+}
+
+.line.green {
+    &::before {
+        background-color: #8DC63F;
+    }
+
+    &::after {
+        background-color: #8DC63F;
+    }
+}
+
+
+// start the style 
+.product-accessories {
+    padding: 80px;
+
+    @media (max-width:768px) {
+        padding: 20px;
+    }
+
+    .owl-theme {
+        .owl-nav {
+            display: none;
+        }
+
+        .owl-dots {
+            margin-top: 25px;
+
+            .owl-dot span {
+                background-color: #fff;
+                border: 1px solid #999;
+            }
+
+            .owl-dot.active span {
+                border: none;
+                background-color: #e78c24;
+            }
+
+            .owl-dot:hover span {
+                border: none;
+                background-color: #e78c24;
+            }
+        }
+    }
+}
+
+// start the accessories 
+.accessories {
+    padding: 20px;
+
+    .card {
+        border-radius: 20px;
+        margin-bottom: 10px;
+        box-shadow: 0px 2px 2px 2px rgba(32, 32, 32, 0.16);
+
+        .pro {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            border: 1px solid #99C455;
+            left: 10px;
+            top: 10px;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .model {
+        font-size: 12px;
+    }
+
+    .view-details {
+        padding: 5px 10px;
+        font-size: 12px;
+        color: #202020;
+        background-color: #fff;
+        border: 2px solid #e78c24;
+        border-radius: 20px;
+        transition: .5s;
+
+        &:hover {
+            color: #fff;
+            background-image: linear-gradient(#E78A3C, #99C455);
+            border-color: #fff;
+        }
+    }
+
+
+    .owl-nav {
+        position: absolute;
+        top: -90px;
+        right: 30px;
+        font-size: 60px;
+
+        button.owl-prev,
+        button.owl-next {
+            &:hover {
+                background-color: transparent;
+                color: #000;
+            }
+        }
+    }
+
+    .owl-dots {
+        display: none;
+    }
+}
+
+// machine head style 
+.machine-head {
+    .owl-nav {
+        position: absolute;
+        top: -90px;
+        right: 30px;
+        font-size: 60px;
+
+        button.owl-prev,
+        button.owl-next {
+            &:hover {
+                background-color: transparent;
+                color: #000;
+            }
+        }
+    }
+
+    .owl-dots {
+        display: none;
+    }
+
+    .card {
+        margin-bottom: 20px;
+        border-radius: 0;
+        border: none;
+        box-shadow: 0px 1px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+
+    .products-title {
+        padding: 5px 10px;
+        display: inline-block;
+        background-image: linear-gradient(#E78A3C, #99C455);
+        color: #fff;
+    }
+
+    .imgs-box {
+        img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            border: 1px solid #8DC63F;
+            padding: 10px;
+        }
+    }
+
+    .head-image {
+        padding: 30px 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 200px;
+        }
+    }
+
+    button {
+        padding: 10px 25px;
+        font-size: 18px;
+        color: #202020;
+        background-color: #fff;
+        border: 2px solid #e78c24;
+        border-radius: 15px;
+        transition: .5s;
+        font-weight: bold;
+
+        &:hover {
+            color: #fff;
+            background-image: linear-gradient(#E78A3C, #99C455);
+            border-color: #fff;
+        }
+    }
+}
