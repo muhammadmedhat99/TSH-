@@ -63,6 +63,10 @@ body {
 
 
 .our-products {
+    p {
+        max-width: 80%;
+    }
+
     .owl-carousel {
         transform: rotate(90deg);
     }
@@ -136,7 +140,7 @@ body {
         }
 
         .products-that-it-makes {
-            left: -20px;
+            left: 0px;
             top: 50%;
             transform: translateY(-50%);
             position: absolute;
@@ -146,8 +150,8 @@ body {
 
             .img-box {
                 img {
-                    width: 60px;
-                    height: 60px;
+                    width: 40px;
+                    height: 40px;
                     padding: 5px;
                     border-radius: 50%;
                     border: 1px solid #999;
@@ -157,7 +161,7 @@ body {
     }
 
     .products-that-it-makes {
-        right: -20px;
+        right: 0px;
         top: 50%;
         transform: translateY(-50%);
         position: absolute;
@@ -167,8 +171,8 @@ body {
 
         .img-box {
             img {
-                width: 60px;
-                height: 60px;
+                width: 40px;
+                height: 40px;
                 padding: 5px;
                 border-radius: 50%;
                 border: 1px solid #999;

@@ -97,3 +97,5 @@ $(".img-wrapper" ).hover(
     // Fade out the overlay
     $("#overlay").fadeOut("slow");
   });
+
+  

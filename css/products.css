@@ -60,6 +60,10 @@ body {
   background-color: #8DC63F;
 }
 
+.our-products p {
+  max-width: 80%;
+}
+
 .our-products .owl-carousel {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
@@ -133,7 +137,7 @@ body {
 }
 
 .our-products .row.bg-light .products-that-it-makes {
-  left: -20px;
+  left: 0px;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -149,15 +153,15 @@ body {
 }
 
 .our-products .row.bg-light .products-that-it-makes .img-box img {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   padding: 5px;
   border-radius: 50%;
   border: 1px solid #999;
 }
 
 .our-products .products-that-it-makes {
-  right: -20px;
+  right: 0px;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -173,8 +177,8 @@ body {
 }
 
 .our-products .products-that-it-makes .img-box img {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   padding: 5px;
   border-radius: 50%;
   border: 1px solid #999;
