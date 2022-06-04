@@ -237,3 +237,55 @@
         }
     }
 }
+
+// modal style 
+.modal-content {
+    .owl-nav {
+        display: none;
+    }
+
+    .item {
+        img {
+            padding: 10px;
+            border: 1px solid #e1e1e1;
+            border-radius: 10px;
+        }
+    }
+
+    .owl-dots {
+        .owl-dot {
+            span {
+                background-color: #fff;
+                border: 1px solid #343434;
+            }
+        }
+
+        .owl-dot.active {
+            span {
+                background-color: #F58520;
+                border: #fff;
+            }
+        }
+    }
+
+    .detials-content {
+        input {
+            padding: 3px 10px;
+            border: 2px solid #F58520;
+            border-radius: 10px;
+        }
+
+        .main-details {
+            img {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                border: 1px solid #999;
+            }
+        }
+    }
+}
+
+.modal-backdrop {
+    background-image: linear-gradient(#E78A3C, #99C455);
+}
