@@ -853,11 +853,11 @@ body {
         }
     }
 
-    // send mail area 
     .send-mail {
 
         input,
-        textarea {
+        textarea,
+        select {
             width: 100%;
             padding: 10px 20px;
             border: 2px solid #E78A3C;
@@ -876,11 +876,13 @@ body {
                 border-radius: 10px;
                 font-size: 22px;
             }
-
-
         }
     }
+
 }
+
+// send mail area 
+
 
 // photo galary area style
 .photo-galary {

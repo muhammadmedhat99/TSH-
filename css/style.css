@@ -826,7 +826,8 @@ body {
 }
 
 .contact-us .send-mail input,
-.contact-us .send-mail textarea {
+.contact-us .send-mail textarea,
+.contact-us .send-mail select {
   width: 100%;
   padding: 10px 20px;
   border: 2px solid #E78A3C;

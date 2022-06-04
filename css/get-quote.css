@@ -1,0 +1,49 @@
+.line {
+  width: 60px;
+  height: 1px;
+  position: absolute;
+  right: 50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+}
+
+.line::before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 1px;
+  background-color: #fff;
+  left: -15px;
+}
+
+.line::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 1px;
+  background-color: #fff;
+  right: -15px;
+}
+
+.send-mail input,
+.send-mail textarea,
+.send-mail select {
+  width: 100%;
+  padding: 10px 20px;
+  border: 2px solid #E78A3C;
+  border-radius: 10px;
+  margin: 10px;
+  resize: none;
+  outline: none;
+}
+
+.send-mail .submit button {
+  border: none;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#E78A3C), to(#99C455));
+  background-image: linear-gradient(#E78A3C, #99C455);
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 10px;
+  font-size: 22px;
+}
+/*# sourceMappingURL=get-quote.css.map */
