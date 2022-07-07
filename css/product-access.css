@@ -279,4 +279,40 @@
   background-image: -webkit-gradient(linear, left top, left bottom, from(#E78A3C), to(#99C455));
   background-image: linear-gradient(#E78A3C, #99C455);
 }
+
+.read-more {
+  opacity: 1;
+  padding: 10px 20px;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#E78A3C), to(#99C455));
+  background-image: linear-gradient(#E78A3C, #99C455);
+}
+
+.panner .owl-dots {
+  display: none;
+}
+
+.panner .owl-nav {
+  text-align: right;
+  margin-right: 20px;
+}
+
+.panner .owl-nav button:hover {
+  background: #fff !important;
+  color: #000 !important;
+}
+
+.panner .owl-nav button span {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.text-dev {
+  top: 50%;
+  left: 75%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
 /*# sourceMappingURL=product-access.css.map */
