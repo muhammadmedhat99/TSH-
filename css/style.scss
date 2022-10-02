@@ -1085,10 +1085,9 @@ body {
                 }
             }
         }
-
-
-
     }
+
+
 
 
     .read-more-btn {
@@ -1098,6 +1097,41 @@ body {
         border: 2px solid #E78A3C;
         border-radius: 10px;
         outline: none;
+    }
+}
+
+.bg-grediant {
+    background-image: linear-gradient(to left, #E78A3C, #99C455);
+}
+
+.service-care {
+    font-size: 41px;
+    color: #fff;
+    width: 60%;
+    margin: auto;
+}
+
+.vjs-poster {
+    background: #989898;
+}
+
+.video-js {
+    color: #000;
+    border-radius: 25px;
+    overflow: hidden;
+
+    .vjs-big-play-button {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        background: #e68a3c;
+        color: #fff;
+        border: none;
+        box-shadow: 0px 0px 40px #9ac254;
     }
 }
 

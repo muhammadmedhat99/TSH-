@@ -329,3 +329,37 @@
     left: 75%;
     transform: translateY(-50%);
 }
+
+.par-column {
+    position: relative;
+
+    .paragraph-container {
+        .the-paragraph {
+            margin-top: 20px;
+        }
+
+        .line {
+            right: unset;
+        }
+
+
+    }
+
+    &.befandaft {
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            background-color: #E78A3C;
+            bottom: 0;
+            right: -20px;
+        }
+
+        &::after {
+            transform: rotate(90deg);
+        }
+    }
+}
